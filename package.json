@@ -21,10 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
-    "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +56,10 @@
     "prettier": "^2.7.1"
   },
   "lint-staged": {
+    "src/**/*.{ts,js,jsx,tsx,css}": "eslint --fix",
+    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
+    "*.css": "stylelint",
+    "*.scss": "stylelint --syntax=scss",
     "*": "prettier --ignore-unknown --write"
   }
 }
