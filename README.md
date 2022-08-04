@@ -13,8 +13,8 @@ All you need is to clone this repository to your local computer and install all 
 **All Steps:**
 
 ```bash
-git clone 'git@github.com:ahmadnzr/reactjs-boilerplate.git' &&
-cd reactjs-boilerplate &&
+git clone 'https://github.com/ahmadnzr/reactjs-boilerplate.git'
+cd reactjs-boilerplate
 yarn
 ```
 
