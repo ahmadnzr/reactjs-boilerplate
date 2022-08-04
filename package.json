@@ -56,10 +56,8 @@
     "prettier": "^2.7.1"
   },
   "lint-staged": {
-    "src/**/*.{ts,js,jsx,tsx,css}": "eslint --fix",
-    "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged",
-    "*.css": "stylelint",
-    "*.scss": "stylelint --syntax=scss",
-    "*": "prettier --ignore-unknown --write"
+    "*.{js,ts,tsx,md,json}": [
+      "prettier --write"
+    ]
   }
 }
